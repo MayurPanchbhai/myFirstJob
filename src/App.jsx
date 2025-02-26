@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useState } from "react";
 import AdminLogin from "./pages/AdminLogin";
 import Admin from "./pages/Admin";
+import Home from "./pages/Home";
+import JobListHome from "./components/JobListHome";
+import JobDetailPage from "./pages/JobDetailPage";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -24,6 +27,13 @@ const App = () => {
           path="/admin"
           element={isAuthenticated ? <Admin /> : <Navigate to="/admin-login" />}
         />
+        <Route
+          path="/"
+          element={<JobListHome />}
+        />
+
+        <Route path="/job/:id" element={<JobDetailPage />} />
+        
       </Routes>
     </Router>
   );

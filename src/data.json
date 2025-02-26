@@ -1,6 +1,122 @@
-{
-    "title": "Welcome to My Website",
-    "description": "This is a dynamic JSON file that can be updated anytime.",
-    "footer": "© 2025 MyFirstJob. All rights reserved."
+[
+  {
+    "id": "mpsg1001",
+    "datePosted": "2024-02-22",
+    "companyName": "Tech Solutions",
+    "jobTitle": "Software Engineer",
+    "salary": "₹8,00,000 per year",
+    "jobType": "Full-Time",
+    "aboutCompany": "Tech Solutions is a leading software company specializing in AI and cloud computing.",
+    "companyLogo": "https://via.placeholder.com/50",
+    "jobDescription": "We are looking for a skilled Software Engineer to join our growing team.",
+    "location": "Mumbai",
+    "experience": "2+ years",
+    "roleAndResponsibilities": [
+      "Develop high-quality software solutions",
+      "Collaborate with cross-functional teams",
+      "Write clean and efficient code"
+    ],
+    "educationAndSkills": [
+      "Bachelor’s degree in Computer Science",
+      "Proficiency in Java, JavaScript, and React",
+      "Strong problem-solving skills"
+    ],
+    "applyLink": "https://example.com/apply/software-engineer"
+  },
+  {
+    "id": "mpsg1002",
+    "datePosted": "2024-02-22",
+    "companyName": "Innovate Tech",
+    "jobTitle": "Frontend Developer",
+    "salary": "₹6,50,000 per year",
+    "jobType": "Full-Time",
+    "aboutCompany": "Innovate Tech builds modern web applications and digital experiences.",
+    "companyLogo": "https://via.placeholder.com/50",
+    "jobDescription": "Looking for a frontend developer to design and develop user-friendly interfaces.",
+    "location": "Bangalore",
+    "experience": "1+ years",
+    "roleAndResponsibilities": [
+      "Create responsive web designs",
+      "Optimize applications for performance",
+      "Work with designers to improve UX"
+    ],
+    "educationAndSkills": [
+      "Degree in Computer Science or related field",
+      "Experience with HTML, CSS, JavaScript, and React",
+      "Understanding of UI/UX principles"
+    ],
+    "applyLink": "https://example.com/apply/frontend-developer"
+  },
+  {
+    "id": "mpsg1003",
+    "datePosted": "2024-02-22",
+    "companyName": "AI Robotics",
+    "jobTitle": "Machine Learning Engineer",
+    "salary": "₹12,00,000 per year",
+    "jobType": "Full-Time",
+    "aboutCompany": "AI Robotics specializes in AI-powered automation and robotics solutions.",
+    "companyLogo": "https://via.placeholder.com/50",
+    "jobDescription": "Hiring a Machine Learning Engineer to develop AI-based models.",
+    "location": "Hyderabad",
+    "experience": "3+ years",
+    "roleAndResponsibilities": [
+      "Design machine learning algorithms",
+      "Train and fine-tune AI models",
+      "Analyze large datasets"
+    ],
+    "educationAndSkills": [
+      "Master’s degree in AI/ML or relevant field",
+      "Expertise in Python, TensorFlow, and NLP",
+      "Experience in data science"
+    ],
+    "applyLink": "https://example.com/apply/ml-engineer"
+  },
+  {
+    "id": "mpsg1004",
+    "datePosted": "2024-02-22",
+    "companyName": "CyberTech",
+    "jobTitle": "Cyber Security Analyst",
+    "salary": "₹10,00,000 per year",
+    "jobType": "Full-Time",
+    "aboutCompany": "CyberTech provides cutting-edge cybersecurity solutions for enterprises.",
+    "companyLogo": "https://via.placeholder.com/50",
+    "jobDescription": "Looking for a Cyber Security Analyst to enhance our security infrastructure.",
+    "location": "Delhi",
+    "experience": "3+ years",
+    "roleAndResponsibilities": [
+      "Monitor and prevent security breaches",
+      "Conduct risk assessments",
+      "Implement security best practices"
+    ],
+    "educationAndSkills": [
+      "Certified Ethical Hacker (CEH) preferred",
+      "Strong knowledge of network security",
+      "Experience with firewalls and intrusion detection systems"
+    ],
+    "applyLink": "https://example.com/apply/cyber-security-analyst"
+  },
+  {
+    "id": "mpsg1005",
+    "datePosted": "2024-02-22",
+    "companyName": "CloudSoft",
+    "jobTitle": "DevOps Engineer",
+    "salary": "₹9,00,000 per year",
+    "jobType": "Full-Time",
+    "aboutCompany": "CloudSoft provides cloud-based solutions to enterprises worldwide.",
+    "companyLogo": "https://via.placeholder.com/50",
+    "jobDescription": "Seeking a DevOps Engineer to automate deployment pipelines.",
+    "location": "Pune",
+    "experience": "2+ years",
+    "roleAndResponsibilities": [
+      "Manage CI/CD pipelines",
+      "Optimize cloud infrastructure",
+      "Implement automation tools"
+    ],
+    "educationAndSkills": [
+      "Experience with AWS, Docker, Kubernetes",
+      "Knowledge of CI/CD best practices",
+      "Proficiency in scripting languages"
+    ],
+    "applyLink": "https://example.com/apply/devops-engineer"
   }
-  
+]
