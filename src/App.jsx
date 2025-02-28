@@ -33,6 +33,7 @@ const App = () => {
         />
 
         <Route path="/job/:id" element={<JobDetailPage />} />
+        {/* <Route path="/admin-login" element={<AdminLogin onLogin={handleLogin} />} /> */}
         
       </Routes>
     </Router>

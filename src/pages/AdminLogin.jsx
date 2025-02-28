@@ -7,7 +7,7 @@ const AdminLogin = ({ onLogin }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
+
     const ADMIN_USERNAME = import.meta.env.VITE_ADMIN_USERNAME;
     const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
 
@@ -18,9 +18,21 @@ const AdminLogin = ({ onLogin }) => {
     }
   };
 
+  const goToHome = () => {
+    window.location.href = "/"; // Redirects to home page
+  };
+
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+        {/* Home Button */}
+        <button
+          onClick={goToHome}
+          className="mb-4 bg-gray-300 text-black py-2 px-4 rounded-md hover:bg-gray-400 transition w-full"
+        >
+          Home
+        </button>
+
         <h2 className="text-2xl font-bold mb-4 text-center">Admin Login</h2>
         {error && <p className="text-red-500 text-center">{error}</p>}
         <form onSubmit={handleLogin}>

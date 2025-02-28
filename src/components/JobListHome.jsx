@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import jobData from "../data.json"; // Importing job data from JSON file
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function JobListHome() {
   const jobsPerPage = 10;
@@ -28,8 +30,12 @@ export default function JobListHome() {
     }
   };
 
-  return (
+  return (<>
+    <Header />
+  
+
     <div className="container mx-auto p-4">
+
       <h1 className="text-2xl font-bold mb-4 text-center">Job Listings</h1>
 
       {/* Job List in Grid Format */}
@@ -91,5 +97,7 @@ export default function JobListHome() {
         </button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
