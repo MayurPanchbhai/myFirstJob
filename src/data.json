@@ -1,6 +1,7 @@
 [
   {
     "id": "mpsg1001",
+    "batch":2023,
     "datePosted": "2024-02-22",
     "companyName": "Tech Solutions",
     "jobTitle": "Software Engineer",
@@ -25,6 +26,7 @@
   },
   {
     "id": "mpsg1002",
+    "batch":2024,
     "datePosted": "2024-02-22",
     "companyName": "Innovate Tech",
     "jobTitle": "Frontend Developer",
@@ -49,6 +51,7 @@
   },
   {
     "id": "mpsg1003",
+    "batch":2025,
     "datePosted": "2024-02-22",
     "companyName": "AI Robotics",
     "jobTitle": "Machine Learning Engineer",
@@ -73,6 +76,7 @@
   },
   {
     "id": "mpsg1004",
+    "batch":2024,
     "datePosted": "2024-02-22",
     "companyName": "CyberTech",
     "jobTitle": "Cyber Security Analyst",
@@ -97,6 +101,7 @@
   },
   {
     "id": "mpsg1005",
+    "batch":2023,
     "datePosted": "2024-02-22",
     "companyName": "CloudSoft",
     "jobTitle": "DevOps Engineer",
@@ -123,6 +128,7 @@
   ,{
     "id": "mpsg1006",
 
+    "batch":2024,
     "datePosted": "2024-03-03",
 
     "companyName": "Kroll",

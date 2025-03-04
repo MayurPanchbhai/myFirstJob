@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,23 +15,41 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
-          <a href="/" className="hover:text-gray-200">Home</a>
-          <div className="relative group">
-            <button className="hover:text-gray-200 flex items-center">Location <IoIosArrowDown className="ml-2" /></button>
-            <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg opacity-0 group-hover:opacity-100 group-hover:flex flex-col transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">Mumbai</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">Pune</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">Delhi</a>
-            </div>
+          <Link to="/" className="hover:text-gray-200">Home</Link>
+          
+          <div className="relative">
+            <button
+              onClick={() => setLocationOpen(!locationOpen)}
+              className="hover:text-gray-200 flex items-center"
+            >
+              Location <IoIosArrowDown className="ml-2" />
+            </button>
+            {locationOpen && (
+              <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg flex flex-col z-50">
+                <Link to="/jobs/mumbai" className="block px-4 py-2 hover:bg-gray-200">Mumbai</Link>
+                <Link to="/jobs/pune" className="block px-4 py-2 hover:bg-gray-200">Pune</Link>
+                <Link to="/jobs/delhi" className="block px-4 py-2 hover:bg-gray-200">Delhi</Link>
+              </div>
+            )}
           </div>
-          <div className="relative group">
-            <button className="hover:text-gray-200 flex items-center">Batch <IoIosArrowDown className="ml-2" /></button>
-            <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg opacity-0 group-hover:opacity-100 group-hover:flex flex-col transition-opacity pointer-events-none group-hover:pointer-events-auto z-50">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">Batch 1</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">Batch 2</a>
-            </div>
+          
+          <div className="relative">
+            <button
+              onClick={() => setBatchOpen(!batchOpen)}
+              className="hover:text-gray-200 flex items-center"
+            >
+              Batch <IoIosArrowDown className="ml-2" />
+            </button>
+            {batchOpen && (
+              <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg flex flex-col z-50">
+                <Link to="/batch/2023" className="block px-4 py-2 hover:bg-gray-200">2023</Link>
+                <Link to="/batch/2024" className="block px-4 py-2 hover:bg-gray-200">2024</Link>
+                <Link to="/batch/2025" className="block px-4 py-2 hover:bg-gray-200">2025</Link>
+              </div>
+            )}
           </div>
-          <a href="/contact" className="hover:text-gray-200">Contact Us</a>
+          
+          <Link to="/contact" className="hover:text-gray-200">Contact Us</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -39,7 +58,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu - Slide in from right */}
+      {/* Mobile Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-blue-700 p-4 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -49,7 +68,7 @@ export default function Header() {
           <FaTimes size={24} className="text-white" />
         </button>
         <nav className="mt-10 space-y-4">
-          <a href="/" className="block hover:text-gray-200">Home</a>
+          <Link to="/" className="block hover:text-gray-200">Home</Link>
           <div>
             <button
               className="flex items-center w-full text-left hover:text-gray-200"
@@ -59,9 +78,9 @@ export default function Header() {
             </button>
             {locationOpen && (
               <div className="ml-4 space-y-1">
-                <a href="#" className="block hover:text-gray-200">Mumbai</a>
-                <a href="#" className="block hover:text-gray-200">Pune</a>
-                <a href="#" className="block hover:text-gray-200">Delhi</a>
+                <Link to="/jobs/mumbai" className="block hover:text-gray-200">Mumbai</Link>
+                <Link to="/jobs/pune" className="block hover:text-gray-200">Pune</Link>
+                <Link to="/jobs/delhi" className="block hover:text-gray-200">Delhi</Link>
               </div>
             )}
           </div>
@@ -74,14 +93,16 @@ export default function Header() {
             </button>
             {batchOpen && (
               <div className="ml-4 space-y-1">
-                <a href="#" className="block hover:text-gray-200">Batch 1</a>
-                <a href="#" className="block hover:text-gray-200">Batch 2</a>
+                <Link to="/batch/2023" className="block hover:text-gray-200">2023</Link>
+                <Link to="/batch/2024" className="block hover:text-gray-200">2024</Link>
+                <Link to="/batch/2025" className="block hover:text-gray-200">2025</Link>
               </div>
             )}
           </div>
-          <a href="/contact" className="block hover:text-gray-200">Contact Us</a>
+          <Link to="/contact" className="block hover:text-gray-200">Contact Us</Link>
         </nav>
       </div>
     </header>
   );
 }
+
