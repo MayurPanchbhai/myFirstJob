@@ -7,6 +7,10 @@ import JobListHome from "./components/JobListHome";
 import JobDetailPage from "./pages/JobDetailPage";
 import CityJobs from "./pages/CityJobs";
 import BatchJobs from "./pages/BatchJobs";
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/Aboutus";
+import PrivacyPolicy from "./pages/Privacy&policy";
+import TermsAndConditions from "./pages/T&C";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -39,6 +43,10 @@ const App = () => {
 
         <Route path="/jobs/:city" element={<CityJobs />} />
         <Route path="/batch/:batch" element={<BatchJobs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/p&p" element={<PrivacyPolicy />} />
+        <Route path="/t&c" element={<TermsAndConditions />} />
         
       </Routes>
     </Router>
