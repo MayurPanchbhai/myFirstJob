@@ -43,7 +43,7 @@ const Contact = () => {
           <div className="flex items-center gap-4">
             <FaWhatsapp className="text-green-500 text-xl sm:text-2xl" />
             <a
-              href="https://chat.whatsapp.com/yourgroupinvite"
+              href="https://chat.whatsapp.com/ClzxVUv7BtE9or25WM5Knu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-green-500 transition"

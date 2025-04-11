@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="bg-blue-600 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">Your Logo</div>
+        <div className="text-xl font-bold">My First Job</div>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">

@@ -59,12 +59,13 @@ const TermsAndConditions = () => {
             <br />
             📧 <span className="underline">your-email@example.com</span><br />
             📲 Instagram: <span className="underline">@yourhandle</span><br />
-            📱 Join our WhatsApp group for latest job updates.
+            📱 Join our <span className="underline">
+            <a href="https://chat.whatsapp.com/ClzxVUv7BtE9or25WM5Knu" target="_blank">WhatsApp group</a></span>  for latest job updates.
           </p>
         </div>
       </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </>
   );
 };
