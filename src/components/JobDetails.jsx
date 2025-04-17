@@ -3,6 +3,8 @@ import jobsData from "../data.json"; // Import the JSON file
 
 const JobDetails = () => {
   const { id } = useParams(); // Get the clicked job's ID from the URL
+  console.log(id);
+  
 
   // Find the job based on ID
   const job = jobsData.find((job) => job.id.toString() === id);
