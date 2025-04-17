@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-gray-200">Home</Link>
           
-          <div className="relative">
+          {/* <div className="relative">
             <button
               onClick={() => setLocationOpen(!locationOpen)}
               className="hover:text-gray-200 flex items-center"
@@ -31,9 +31,9 @@ export default function Header() {
                 <Link to="/jobs/delhi" className="block px-4 py-2 hover:bg-gray-200">Delhi</Link>
               </div>
             )}
-          </div>
+          </div> */}
           
-          <div className="relative">
+          {/* <div className="relative">
             <button
               onClick={() => setBatchOpen(!batchOpen)}
               className="hover:text-gray-200 flex items-center"
@@ -47,8 +47,9 @@ export default function Header() {
                 <Link to="/batch/2025" className="block px-4 py-2 hover:bg-gray-200">2025</Link>
               </div>
             )}
-          </div>
+          </div> */}
           
+          <Link to="/about" className="hover:text-gray-200">About Us</Link>
           <Link to="/contact" className="hover:text-gray-200">Contact Us</Link>
         </nav>
 
@@ -70,12 +71,12 @@ export default function Header() {
         <nav className="mt-10 space-y-4">
           <Link to="/" className="block hover:text-gray-200">Home</Link>
           <div>
-            <button
+            {/* <button
               className="flex items-center w-full text-left hover:text-gray-200"
               onClick={() => setLocationOpen(!locationOpen)}
             >
               Location <IoIosArrowDown className="ml-2" />
-            </button>
+            </button> */}
             {locationOpen && (
               <div className="ml-4 space-y-1">
                 <Link to="/jobs/mumbai" className="block hover:text-gray-200">Mumbai</Link>
@@ -85,12 +86,12 @@ export default function Header() {
             )}
           </div>
           <div>
-            <button
+            {/* <button
               className="flex items-center w-full text-left hover:text-gray-200"
               onClick={() => setBatchOpen(!batchOpen)}
             >
               Batch <IoIosArrowDown className="ml-2" />
-            </button>
+            </button> */}
             {batchOpen && (
               <div className="ml-4 space-y-1">
                 <Link to="/batch/2023" className="block hover:text-gray-200">2023</Link>
@@ -99,6 +100,7 @@ export default function Header() {
               </div>
             )}
           </div>
+          <Link to="/about" className="block hover:text-gray-200">About Us</Link>
           <Link to="/contact" className="block hover:text-gray-200">Contact Us</Link>
         </nav>
       </div>
